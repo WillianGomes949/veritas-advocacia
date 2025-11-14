@@ -1,7 +1,7 @@
 // src/components/sections/AreasGrid.tsx
 import { Card } from "@/components/ui/Card"; // Importa nossa UI
 import { SectionTitle } from "@/components/ui/SectionTitle"; // Importa o título padrão
-import DADOS_AREAS from "@/data/areas";
+import {DADOS_AREAS} from "@/data/areas";
 
 export function AreasGrid() {
   return (

@@ -1,0 +1,68 @@
+# Estrutura de Pastas - Site de Advocacia (Next.js, React, Tailwind, TypeScript)
+
+```bash
+project-root/
+├── public/
+│   ├── favicon.ico
+│   ├── logo.png
+│   └── images/
+│       ├── equipe/
+│       ├── areas/
+│       └── banners/
+│
+├── src/
+│   ├── app/                     # Estrutura do Next.js (rotas, layouts, páginas)
+│   │   ├── layout.tsx           # Layout principal
+│   │   ├── page.tsx             # Página inicial
+│   │   ├── contato/
+│   │   │   └── page.tsx
+│   │   ├── sobre/
+│   │   │   └── page.tsx
+│   │   ├── areas-de-atuacao/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/          # Página dinâmica para áreas específicas
+│   │   │       └── page.tsx
+│   │   └── blog/
+│   │       ├── page.tsx
+│   │       └── [slug]/
+│   │           └── page.tsx
+│   │
+│   ├── components/              # Componentes reutilizáveis
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── ui/                  # Botões, inputs, cards, etc.
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── SectionTitle.tsx
+│   │   └── sections/            # Sessões específicas do site
+│   │       ├── Hero.tsx
+│   │       ├── SobreHome.tsx
+│   │       ├── AreasGrid.tsx
+│   │       └── Depoimentos.tsx
+│   │
+│   ├── styles/
+│   │   └── globals.css          # Configurações gerais do Tailwind
+│   │
+│   ├── lib/                     # Funções utilitárias
+│   │   ├── api.ts
+│   │   └── formatters.ts
+│   │
+│   ├── data/                    # Conteúdos estáticos
+│   │   ├── areas.ts
+│   │   ├── equipe.ts
+│   │   └── depoimentos.ts
+│   │
+│   └── hooks/                   # Hooks personalizados
+│       └── useForm.ts
+│
+├── .eslintrc.json
+├── .prettierrc
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── README.md
+```
+
+Se quiser, posso gerar **arquivos base**, **componentes iniciais**, ou **uma versão completa pronta para copiar e colar**.

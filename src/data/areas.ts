@@ -17,7 +17,7 @@ export type AreaDeAtuacao = {
 };
 
 // Aqui está todo o seu conteúdo, focado no trabalhador
-export const DADOS_AREAS: AreaDeAtuacao[] = [
+const DADOS_AREAS: AreaDeAtuacao[] = [
   {
     title: "Demissão por Justa Causa Injusta",
     description: "Analisamos e revertemos demissões falsas ou exageradas para garantir todos os seus direitos.",
@@ -49,3 +49,5 @@ export const DADOS_AREAS: AreaDeAtuacao[] = [
     icon: HiOutlineHeart,
   },
 ];
+export default DADOS_AREAS;
+

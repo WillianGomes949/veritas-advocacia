@@ -11,16 +11,16 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 // Definição dos links de navegação
 const navLinks = [
   { href: "/", label: "Início" },
-  { href: "/sobre", label: "Sobre Nós" },
-  { href: "/#areas", label: "Áreas de Atuação" },
-  { href: "/contato", label: "Contato" },
+  { href: "#sobre", label: "Sobre Nós" },
+  { href: "#areas", label: "Áreas de Atuação" },
+  { href: "#contato", label: "Contato" },
 ];
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-zinc-200 dark:border-zinc-800 transition-colors duration-300">
       <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Substituído por Card */}
         <Link href="/" className="flex items-center gap-2 group">
@@ -48,7 +48,7 @@ export function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-sm font-medium text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300 relative group"
+                  className="text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 dark:bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
@@ -70,7 +70,7 @@ export function Header() {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Abrir menu"
-            className="text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="text-zinc-800 dark:text-zinc-100 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800"
           >
             {isMobileMenuOpen ? (
               <HiOutlineX size={26} />
@@ -83,14 +83,14 @@ export function Header() {
 
       {/* Menu Mobile (Dropdown) */}
       {isMobileMenuOpen && (
-        <div className="absolute left-0 top-20 w-full border-t bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-gray-200 dark:border-gray-800 shadow-xl lg:hidden animate-in slide-in-from-top-5 duration-300">
+        <div className="absolute left-0 top-20 w-full border-t bg-white/95 dark:bg-zinc-900/95 backdrop-blur-lg border-zinc-200 dark:border-zinc-800 shadow-xl lg:hidden animate-in slide-in-from-top-5 duration-300">
           <nav className="flex flex-col space-y-2 p-6">
             <ul className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block py-3 px-4 text-base font-medium text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-300"
+                    className="block py-3 px-4 text-base font-medium text-zinc-800 dark:text-zinc-100 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-zinc-50 dark:hover:bg-zinc-800 rounded-lg transition-all duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}

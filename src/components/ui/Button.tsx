@@ -4,19 +4,20 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { FiLoader } from "react-icons/fi"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-95",
+  "inline-flex items-center justify-center md:whitespace-nowrap font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-95 hover:shadow-2xl transform hover:-translate-y-0.5 p-4",
   {
     variants: {
       variant: {
         // Botão primário - Âmbar/Luxo
         default:
-          "bg-amber-600 text-white shadow-lg hover:bg-amber-700 focus-visible:ring-amber-500 hover:shadow-xl transform hover:-translate-y-0.5 border border-amber-600",
+          "bg-amber-600 text-white shadow-lg hover:bg-amber-700 focus-visible:ring-amber-500 hover:shadow-xl transform hover:-translate-y-0.5 border border-amber-500",
         
         // Botão secundário - Cinza Sofisticado
         secondary:
-          "bg-gray-800 text-white shadow-sm hover:bg-gray-900 focus-visible:ring-gray-500 border border-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600",
+          "bg-zinc-800 text-white shadow-sm hover:bg-zinc-900 focus-visible:ring-zinc-500 border border-zinc-800 dark:bg-zinc-700 dark:hover:bg-zinc-600",
         
         // Botão outline - Elegante
         outline:
@@ -24,22 +25,22 @@ const buttonVariants = cva(
         
         // Botão ghost - Minimalista
         ghost: 
-          "text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus-visible:ring-gray-500 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white",
+          "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:ring-zinc-500 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white",
         
         // Botão link - Simples
         link: 
-          "text-amber-600 underline-offset-4 hover:underline focus-visible:ring-amber-500 dark:text-amber-400",
+          "text-amber-800 underline-offset-4 hover:underline focus-visible:ring-amber-500 dark:text-amber-600",
         
         // Botão success - Para confirmações
         success:
-          "bg-emerald-600 text-white shadow-lg hover:bg-emerald-700 focus-visible:ring-emerald-500 border border-emerald-600",
+          "bg-teal-600 text-white shadow-lg hover:bg-teal-700 focus-visible:ring-teal-500 border border-teal-500",
         
         // Botão danger - Para ações destrutivas
         danger:
-          "bg-rose-600 text-white shadow-lg hover:bg-rose-700 focus-visible:ring-rose-500 border border-rose-600",
+          "bg-rose-600 text-white shadow-lg hover:bg-rose-700 focus-visible:ring-rose-500 border border-rose-600 hover:border-rose-700",
       },
       size: {
-        xs: "h-8 px-3 text-xs rounded-md gap-1",
+        xs: "h-8 px-3 text-xs gap-1",
         sm: "h-9 px-4 text-sm rounded-md gap-2",
         default: "h-11 px-6 py-3 rounded-lg gap-2",
         lg: "h-12 px-8 text-base rounded-lg gap-3",
@@ -166,25 +167,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
 // Componente de loading spinner
 const LoadingSpinner = () => (
-  <svg 
-    className="animate-spin h-4 w-4 shrink-0" 
-    fill="none" 
-    viewBox="0 0 24 24"
-  >
-    <circle
-      className="opacity-25"
-      cx="12"
-      cy="12"
-      r="10"
-      stroke="currentColor"
-      strokeWidth="4"
-    />
-    <path
-      className="opacity-75"
-      fill="currentColor"
-      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-    />
-  </svg>
+   <FiLoader className="animate-[spin_2s_linear_infinite] h-4 w-4 shrink-0" />
 )
 
 Button.displayName = "Button"

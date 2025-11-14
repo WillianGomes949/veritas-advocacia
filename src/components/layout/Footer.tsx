@@ -32,7 +32,7 @@ const socialLinks = [
 export function Footer() {
   return (
     // Fundo claro e escuro com bordas sutis
-    <footer className="w-full bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <footer className="w-full bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
@@ -53,13 +53,13 @@ export function Footer() {
               height={40}
             />
             */}
-            <p className="mt-4 text-base text-gray-600 dark:text-gray-300 max-w-md">
+            <p className="mt-4 text-base text-zinc-600 dark:text-zinc-300 max-w-md">
               Defendemos seus direitos trabalhistas com excelência e transparência. 
               Sua justiça começa aqui.
             </p>
             {/* Informação OAB */}
             <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-500/10 rounded-lg border border-amber-200 dark:border-amber-500/20">
-              <p className="text-sm text-gray-800 dark:text-gray-200">
+              <p className="text-sm text-zinc-800 dark:text-zinc-200">
                 <span className="font-semibold text-amber-600 dark:text-amber-400">Dr. Rodrigo Silva</span><br />
                 OAB/CE 123.456
               </p>
@@ -68,13 +68,13 @@ export function Footer() {
           
           {/* 2. Links Rápidos */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Navegação</h3>
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">Navegação</h3>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link 
                     href={link.href} 
-                    className="text-gray-600 dark:text-gray-300 transition-all duration-300 hover:text-amber-600 dark:hover:text-amber-400 hover:pl-2 block"
+                    className="text-zinc-600 dark:text-zinc-300 transition-all duration-300 hover:text-amber-600 dark:hover:text-amber-400 hover:pl-2 block"
                   >
                     {link.label}
                   </Link>
@@ -85,17 +85,17 @@ export function Footer() {
 
           {/* 3. Contato e Redes Sociais */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contato</h3>
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">Contato</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
+              <li className="flex items-start gap-3 text-zinc-600 dark:text-zinc-300">
                 <FaMapMarkerAlt className="h-4 w-4 text-amber-600 dark:text-amber-400 mt-1 shrink-0" />
                 <span className="text-sm">Av. Santos Dumont, 1234<br />Sala 501, Fortaleza-CE</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-3 text-zinc-600 dark:text-zinc-300">
                 <FaPhone className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
                 <span className="text-sm">(85) 99999-9999</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
+              <li className="flex items-center gap-3 text-zinc-600 dark:text-zinc-300">
                 <FaEnvelope className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
                 <span className="text-sm">contato@veritasadv.com.br</span>
               </li>
@@ -109,9 +109,9 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg transition-all duration-300 hover:bg-amber-600 dark:hover:bg-amber-600 hover:scale-110"
+                  className="bg-zinc-100 dark:bg-zinc-800 p-3 rounded-lg transition-all duration-300 hover:bg-amber-600 dark:hover:bg-amber-600 hover:scale-110"
                 >
-                  <social.icon className="h-5 w-5 text-gray-600 dark:text-gray-300 hover:text-white" />
+                  <social.icon className="h-5 w-5 text-zinc-600 dark:text-zinc-300 hover:text-white" />
                   <span className="sr-only">{social.label}</span>
                 </a>
               ))}
@@ -121,11 +121,11 @@ export function Footer() {
         </div>
 
         {/* Linha de Copyright */}
-        <div className="mt-12 border-t border-gray-200 dark:border-gray-800 pt-8 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+        <div className="mt-12 border-t border-zinc-200 dark:border-zinc-800 pt-8 text-center">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
             © {new Date().getFullYear()} Véritas Advocacia. Todos os direitos reservados.
           </p>
-          <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+          <p className="mt-2 text-xs text-zinc-400 dark:text-zinc-500">
             Desenvolvido com excelência para resultados extraordinários
           </p>
         </div>

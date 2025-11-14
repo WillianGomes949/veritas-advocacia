@@ -25,7 +25,7 @@ export function Depoimentos() {
           {DADOS_DEPOIMENTOS.map((depoimento) => (
             <div 
               key={depoimento.nome}
-              className="flex flex-col rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:-translate-y-1"
+              className="flex flex-col rounded-2xl bg-white dark:bg-zinc-800 p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-zinc-200 dark:border-zinc-700 hover:-translate-y-1"
             >
               {/* Ícone de Citação (Âmbar) */}
               <div className="shrink-0">
@@ -33,15 +33,15 @@ export function Depoimentos() {
               </div>
 
               {/* Texto do Depoimento */}
-              <p className="mt-6 grow text-lg italic leading-8 text-gray-700 dark:text-gray-300">
+              <p className="mt-6 grow text-lg italic leading-8 text-zinc-700 dark:text-zinc-300">
                 {depoimento.texto}
               </p>
 
               {/* Separador e informações do cliente */}
-              <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6">
+              <div className="mt-8 border-t border-zinc-200 dark:border-zinc-700 pt-6">
                 
                 {/* Nome do cliente */}
-                <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                <h4 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
                   {depoimento.nome}
                 </h4>
                 
@@ -65,7 +65,7 @@ export function Depoimentos() {
 
         {/* Nota adicional de credibilidade */}
         <div className="mt-16 text-center">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
             + de 500 casos resolvidos com excelência
           </p>
         </div>

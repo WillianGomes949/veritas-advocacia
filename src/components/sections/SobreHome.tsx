@@ -13,20 +13,20 @@ export function SobreHome() {
           {/* --- 1. Coluna de Imagem - Substituída por Card --- */}
           <div className="flex justify-center lg:justify-start">
             {/* Card substituto para a imagem do advogado */}
-            <div className="w-full max-w-md h-96 bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-2xl flex flex-col items-center justify-center p-8 border border-gray-200 dark:border-gray-600">
+            <div className="w-full max-w-md h-96 bg-linear-to-br from-zinc-50 to-zinc-100 dark:from-zinc-800 dark:to-zinc-700 rounded-2xl shadow-2xl flex flex-col items-center justify-center p-8 border border-zinc-200 dark:border-zinc-600">
               <div className="w-24 h-24 bg-amber-500 rounded-full flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3 text-center">
+              <h3 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 mb-3 text-center">
                 Dr. Rodrigo Silva
               </h3>
               <p className="text-amber-600 dark:text-amber-400 font-medium mb-4 text-center">
                 Advogado Sênior - OAB/SP 123.456
               </p>
               <div className="w-16 h-1 bg-amber-500 rounded-full mb-4"></div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+              <p className="text-zinc-600 dark:text-zinc-300 text-sm text-center">
                 +10 anos de experiência em Direito Trabalhista
               </p>
             </div>
@@ -67,7 +67,7 @@ export function SobreHome() {
 
             {/* Botão para a página 'Sobre' completa */}
             <div className="mt-4 flex justify-center lg:justify-start">
-              <Button asChild variant="secondary" size="lg" className="bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Button asChild variant="secondary" size="lg" className="bg-zinc-800 hover:bg-zinc-900 dark:bg-zinc-700 dark:hover:bg-zinc-600 text-white font-medium transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Link href="/sobre">
                   Conheça Nossa História
                 </Link>

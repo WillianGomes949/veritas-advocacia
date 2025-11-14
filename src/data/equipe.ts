@@ -8,7 +8,7 @@ export type EquipeMember = {
   imageUrl: string; // Caminho a partir da pasta /public
   oab: string; // Ex: "OAB/CE 12.345"
   bio: string; // Um breve parágrafo
-  specialties?: string;
+  specialties?: string | null;
   experience?: string;
   cases?: string;
 };
@@ -16,36 +16,36 @@ export type EquipeMember = {
 export const DADOS_EQUIPE: EquipeMember[] = [
   {
     id: 1,
-    name: "[Seu Nome Completo]",
+    name: "Pedro Alcantara",
     role: "Advogado Fundador - Especialista Trabalhista",
-    imageUrl: "/images/equipe/advogado-principal.jpg", // Foto principal
-    oab: "OAB/CE [XXXXX]",
+    imageUrl: "/images/equipe/advogado-principal.jpg",
+    oab: "OAB/CE 132546",
     bio: "Com [X] anos de experiência dedicados exclusivamente à defesa dos direitos do trabalhador, o Dr(a). [Seu Sobrenome] fundou a Véritas Advocacia com a missão de trazer justiça e transparência para as relações de trabalho.",
-    specialties: "",
-    experience: "",
-    cases: "",
+    specialties: "Direito do Trabalho, Rescisão Indireta, Acidentes de Trabalho, Assédio Moral, Horas Extras não Pagas",
+    experience: "15",
+    cases: "30",
   },
   {
     id: 2,
-    name: "[Nome Associado(a)]",
+    name: "Juliana Silva",
     role: "Advogado(a) Associado(a)",
-    imageUrl: "/images/equipe/associado-1.jpg", // Crie esta imagem
-    oab: "OAB/CE [XXXXX]",
+    imageUrl: "/images/equipe/associado-1.jpg",
+    oab: "OAB/CE 1254875",
     bio: "Especialista em cálculos rescisórios e análise de verbas, [Nome] é a linha de frente na garantia de que cada centavo devido ao trabalhador seja pago.",
-    specialties: "",
-    experience: "",
-    cases: "",
+    specialties: "Cálculos Trabalhistas, Verbas Rescisórias, Equiparação Salarial, Adicionais de Insalubridade e Periculosidade",
+    experience: "8",
+    cases: "100",
   },
   {
     id: 3,
-    name: "[Nome Assistente]",
+    name: "Amanda Oliveira",
     role: "Assistente Jurídica",
-    imageUrl: "/images/equipe/assistente-1.jpg", // Crie esta imagem
-    oab: "Estagiária OAB/CE [XXXXX]", // Ou apenas o cargo
+    imageUrl: "/images/equipe/assistente-1.jpg",
+    oab: "Estagiária OAB/CE 2598636",
     bio: "Responsável pelo acompanhamento processual e atendimento ao cliente, [Nome] garante que nossos clientes estejam sempre informados sobre o andamento de seus casos.",
-    specialties: "",
-    experience: "",
-    cases: "",
+    specialties: "Acompanhamento Processual, Atendimento ao Cliente, Protocolos Judiciais, Organização de Prazos",
+    experience: "3",
+    cases: "50",
   },
   // Adicione mais membros aqui
 ];

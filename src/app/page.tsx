@@ -1,5 +1,7 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { AreasGrid } from "@/components/sections/AreasGrid";
+import { Contact } from "@/components/sections/Contact";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 import { Depoimentos } from "@/components/sections/Depoimentos";
 import { Equipe } from "@/components/sections/Equipe";
@@ -14,11 +16,12 @@ export default function Home() {
         <Header/>
         <Hero/>
         <SobreHome/>
+        <AreasGrid/>
         <Equipe/>
         <Depoimentos/>
         <Processo/>
         <CtaFinal/>
-        
+        <Contact/>
         <Footer/>
       </main>
     </div>

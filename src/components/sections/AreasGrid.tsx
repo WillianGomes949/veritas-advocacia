@@ -1,14 +1,16 @@
 // src/components/sections/AreasGrid.tsx
 import { Card } from "@/components/ui/Card"; // Importa nossa UI
 import { SectionTitle } from "@/components/ui/SectionTitle"; // Importa o título padrão
-import {DADOS_AREAS} from "@/data/areas";
+import { DADOS_AREAS } from "@/data/areas";
 
 export function AreasGrid() {
   return (
     // Fundo 'Marfim Suave' (padrão)
-    <section id="areas" className="w-full scroll-mt-20 bg-background py-20 md:py-32">
+    <section
+      id="areas"
+      className="w-full scroll-mt-20 bg-background py-20 md:py-32"
+    >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
         {/* Título da Seção - Alinhado ao centro */}
         <SectionTitle
           subtitle="Defendemos Seus Direitos"
@@ -31,7 +33,6 @@ export function AreasGrid() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -60,7 +60,7 @@ export function Header() {
 
         {/* CTA Desktop */}
         <div className="hidden lg:block">
-          <Button href="#" variant={"default"} size="lg">
+          <Button href="#contato" variant={"default"} size="lg">
             Fale com Especialista
           </Button>
         </div>

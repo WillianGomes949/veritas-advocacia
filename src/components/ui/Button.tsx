@@ -25,7 +25,10 @@ const buttonVariants = cva(
         
         // Botão ghost - Minimalista
         ghost: 
-          "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:ring-zinc-500 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white",
+          `bg-transparent text-amber-600 border-amber-600
+      hover:bg-amber-600 hover:text-white hover:border-amber-600
+      focus:ring-amber-500/50 focus:ring-offset-white
+      shadow-lg hover:shadow-2xl hover:shadow-amber-500/20`,
         
         // Botão link - Simples
         link: 

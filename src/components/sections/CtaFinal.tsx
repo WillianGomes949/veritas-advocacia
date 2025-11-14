@@ -28,8 +28,7 @@ export function CtaFinal() {
           <MyBadges
             variant="danger"
             icon={<IoWarning size={20}/>}
-            title="Prazo máximo:"
-            description="2 anos para ação trabalhista"
+            description="Prazo máximo: 2 anos para ação trabalhista"
           />
 
           {/* Botão Principal */}

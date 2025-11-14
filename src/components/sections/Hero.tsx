@@ -73,24 +73,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      {/* <div className="flex gap-2 justify-center items-center py-4 flex-wrap">
-        <Button>dafault</Button>
-        <Button variant="secondary">secondary</Button>
-        <Button variant="outline">outline</Button>
-        <Button variant="success">sucess</Button>
-        <Button variant="link">link</Button>
-        <Button variant="ghost">ghost</Button>
-        <Button variant="danger">danger</Button>
-        <Button loading={true}>loading</Button>
-      </div>
-      <div className="flex gap-2 justify-center items-center py-4 flex-wrap">
-        <MyBadges  icon={<IoAccessibilityOutline/>} title="Justiça & Excelência"/>
-        <MyBadges variant='danger'/>
-        <MyBadges variant='alternative'/>
-        <MyBadges variant='success'/>
-        <MyBadges variant='warning'/>
-      </div> */}
     </section>
   );
 }

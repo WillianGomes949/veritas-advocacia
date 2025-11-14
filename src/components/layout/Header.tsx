@@ -64,7 +64,6 @@ export function Header() {
             Fale com Especialista
           </Button>
         </div>
-
         {/* Botão do Menu Mobile */}
         <div className="lg:hidden">
           <button

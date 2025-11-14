@@ -8,21 +8,27 @@ import { Equipe } from "@/components/sections/Equipe";
 import { Hero } from "@/components/sections/Hero";
 import { Processo } from "@/components/sections/Processo";
 import { SobreHome } from "@/components/sections/SobreHome";
+import TopButton from "@/components/ui/TopButton";
+import { SimpleWhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <Header/>
-        <Hero/>
-        <SobreHome/>
-        <AreasGrid/>
-        <Equipe/>
-        <Depoimentos/>
-        <Processo/>
-        <CtaFinal/>
-        <Contact/>
-        <Footer/>
+        <Header />
+        <Hero />
+        <SobreHome />
+        <AreasGrid />
+        <Equipe />
+        <Depoimentos />
+        <Processo />
+        <CtaFinal />
+        <Contact />
+        <TopButton />
+
+        <SimpleWhatsAppButton position="bottom-left"/>
+
+        <Footer />
       </main>
     </div>
   );

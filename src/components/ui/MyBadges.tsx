@@ -23,7 +23,8 @@ export default function MyBadges(props: BadgeProps) {
   } = props;
 
   const baseStyle = `
-    text-sm font-medium md:font-medium mt-6 inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl text-center
+    text-sm font-medium md:font-medium mt-6 inline-flex items-start
+    gap-3 px-6 py-4 rounded-xl
   `;
   const variantStyles = {
     default: `bg-zinc-100 text-zinc-700/80 `,

@@ -1,13 +1,11 @@
 // src/components/sections/SobreHome.tsx
-import Link from "next/link";
-import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import Image from "next/image";
 
 export function SobreHome() {
   return (
     <section className="w-full bg-background-accent py-20 md:py-30" id="sobre">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* --- 1. Coluna de Imagem - Substituída por Card --- */}
           <div className="relative flex flex-col-reverse gap-6 items-center justify-center lg:justify-start">

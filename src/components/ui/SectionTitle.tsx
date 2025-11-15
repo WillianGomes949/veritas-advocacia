@@ -1,5 +1,7 @@
 // src/components/ui/SectionTitle.tsx
+'use client'
 import { cn } from '@/lib/utils'; // Importa nossa função utilitária de classes
+import { FadeIn } from '../FadeIn';
 
 interface SectionTitleProps {
   subtitle: string;
@@ -18,6 +20,7 @@ export function SectionTitle({
   const alignClass = align === 'center' ? 'text-center' : 'text-left';
 
   return (
+    <FadeIn direction='up' delay={0.4}>
     <div className={cn(alignClass, className)}>
       {/* Subtítulo: Dourado Acetinado (primary) */}
       <h6 className="mb-2 block text-sm font-semibold uppercase tracking-wide text-primary text-amber-600">
@@ -25,9 +28,10 @@ export function SectionTitle({
       </h6>
       
       {/* Título Principal: Azul Oxford (foreground-heading) */}
-      <h2 className="text-3xl font-bold tracking-tight text-foreground-heading sm:text-4xl text-zinc-750 #002147">
+      <h2 className="text-3xl font-bold tracking-tight text-foreground-heading sm:text-4xl text-zinc-750">
         {title}
       </h2>
     </div>
+    </FadeIn>
   );
 }

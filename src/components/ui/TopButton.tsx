@@ -46,7 +46,6 @@ export default function TopButton() {
             className='w-12 h-12 p-3 rounded-2xl '
           >
             <RiArrowUpLine className='h-7 w-7'/>
-            <div className="overflow-hidden absolute inset-0 rounded-2xl bg-amber-500 animate-[ping_1s_linear_infinite] opacity-20 group-hover:opacity-30"></div>
           </Button>
           {/* Efeito de pulsaçao sutil */}
       

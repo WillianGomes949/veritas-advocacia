@@ -55,16 +55,6 @@ export function SobreHome() {
               Nós não temos medo de enfrentar grandes empresas. O nosso
               compromisso é com você e com a verdade.
             </p>
-
-            {/* Botão para a página 'Sobre' completa */}
-            <div className="mt-4 flex justify-center lg:justify-start">
-              <Button
-                variant="secondary"
-                size="lg"
-              >
-                <Link href="/sobre">Conheça Nossa História</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </div>

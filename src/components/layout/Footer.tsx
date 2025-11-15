@@ -5,9 +5,10 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhon
 // Links de navegação rápidos
 const navLinks = [
   { href: "/", label: "Início" },
-  { href: "/sobre", label: "Sobre Nós" },
-  { href: "/#areas", label: "Áreas de Atuação" },
-  { href: "/contato", label: "Contato" },
+  { href: "#sobre", label: "Sobre Nós" },
+  { href: "#areas", label: "Áreas de Atuação" },
+  { href: "#depoimentos", label: "Depoimentos" },
+  { href: "#contato", label: "Contato" },
 ];
 
 // Links das redes sociais
@@ -18,12 +19,12 @@ const socialLinks = [
     label: "WhatsApp" 
   },
   { 
-    href: "https://instagram.com/veritasadvocacia", 
+    href: "https://instagram.com/", 
     icon: FaInstagram, 
     label: "Instagram" 
   },
   { 
-    href: "https://linkedin.com/company/veritasadvocacia", 
+    href: "https://linkedin.com/", 
     icon: FaLinkedin, 
     label: "LinkedIn" 
   },

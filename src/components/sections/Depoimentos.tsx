@@ -8,7 +8,7 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 export function Depoimentos() {
   return (
     // Fundo com contraste sutil
-    <section className="w-full bg-background py-20 md:py-32">
+    <section className="w-full bg-background py-20 md:py-30" id="depoimentos">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Título da Seção - Alinhado ao centro */}

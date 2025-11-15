@@ -7,12 +7,15 @@ import { Button } from "@/components/ui/Button";
 
 // Ícones para menu mobile
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import Image from "next/image";
+import { BsWhatsapp } from "react-icons/bs";
 
 // Definição dos links de navegação
 const navLinks = [
   { href: "/", label: "Início" },
   { href: "#sobre", label: "Sobre Nós" },
   { href: "#areas", label: "Áreas de Atuação" },
+  { href: "#depoimentos", label: "Depoimentos" },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -24,21 +27,18 @@ export function Header() {
       <div className="container mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Substituído por Card */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-40 h-10 bg-linear-to-r from-amber-600 to-amber-700 dark:from-amber-500 dark:to-amber-600 rounded-lg flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-lg tracking-tight">
-              VÉRITAS
-            </span>
-          </div>
-          {/* 
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Véritas Advocacia Logo"
-            width={160}
+            width={40}
             height={40}
             priority
-            className="transition-opacity group-hover:opacity-90"
+            className="dark:invert transition-opacity group-hover:opacity-90"
           />
-          */}
+          <div className="text-zinc-800 dark:text-zinc-300 tracking-tight flex flex-col gap-0">
+            <h2 className="font-bold">Véritas</h2>
+            <span className="text-zinc-700 dark:text-zinc-400">Advogados</span>
+          </div>
         </Link>
 
         {/* Navegação Desktop */}
@@ -59,8 +59,14 @@ export function Header() {
         </nav>
 
         {/* CTA Desktop */}
-        <div className="hidden lg:block">
-          <Button href="#contato" variant={"default"} size="lg">
+        <div className="hidden shrink-0 justify-center items-center md:flex gap-4">
+          <Button
+            href="https://api.whatsapp.com/send/?phone=5585999999999&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+advocat%C3%ADcios.&type=phone_number&app_absent=0"
+            variant={"default"}
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Fale com Especialista
           </Button>
         </div>
@@ -99,7 +105,12 @@ export function Header() {
             </ul>
 
             {/* CTA dentro do Menu Mobile */}
-            <Button href="#" variant={"default"} size="lg">
+            <Button href="https://api.whatsapp.com/send/?phone=5585999999999&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+advocat%C3%ADcios.&type=phone_number&app_absent=0"
+            variant="default"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer">
+              <BsWhatsapp/>
               Fale com Especialista
             </Button>
           </nav>

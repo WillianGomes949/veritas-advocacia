@@ -7,7 +7,7 @@ import { IoWarning } from "react-icons/io5";
 export function CtaFinal() {
   return (
     // Fundo com gradiente sofisticado
-    <section className="w-full bg-linear-to-br from-zinc-50 to-amber-50 py-20 md:py-32">
+    <section className="w-full bg-linear-to-br from-zinc-50 to-amber-50 py-20 md:py-30">
       <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Container principal com borda sutil */}
         <div className="flex flex-col items-center text-center rounded-2xl bg-white p-8 shadow-lg md:p-12">

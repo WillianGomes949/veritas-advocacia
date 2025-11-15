@@ -1,12 +1,13 @@
 // src/components/sections/Hero.tsx
 "use client";
 import { Button } from "@/components/ui/Button";
-import { FadeIn } from "../FadeIn";
+import { FadeIn } from "../ui/FadeIn";
 import Image from "next/image";
+import { BsWhatsapp } from "react-icons/bs";
 
 export function Hero() {
   return (
-    <section className="relative bg-linear-to-r py-24">
+    <section className="relative bg-linear-to-r py-20 md:py-30">
       <div className="absolute inset-0 opacity-30 overflow-hidden -z-10">
         <Image
           src="/images/law.webp"
@@ -16,7 +17,7 @@ export function Hero() {
           height={600}
         />
       </div>
-      <div className="absolute inset-0 bg-linear-to-r from-red-700 to-amber-500 -z-11"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-amber-950 to-amber-500 -z-11"></div>
 
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Grid responsivo */}
@@ -38,7 +39,8 @@ export function Hero() {
 
               {/* Botão de Ação (CTA) */}
               <div className="mt-4 flex justify-center lg:justify-start">
-                <Button href="#" variant="success" size="lg">
+                <Button href="#" variant="success" size="lg" target="_blank">
+                  <BsWhatsapp size={20} className="mr-2" />
                   Fale Grátis com um Especialista
                 </Button>
               </div>
@@ -91,23 +93,3 @@ export function Hero() {
     </section>
   );
 }
-// {/* <main>
-//   <div className="relative min-h-screen">
-//     {/* Imagem de fundo com efeito parallax */}
-//     <div className="fixed inset-0 z-0">
-//       <img
-//         src="/sua-imagem.jpg"
-//         alt="Background"
-//         className="w-full h-full object-cover"
-
-//       />
-//       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-//     </div>
-
-//     {/* Conteúdo */}
-//     <div className="relative z-10">
-
-//     CONTEUDO
-//     </div>
-//   </div>
-// </main> */}

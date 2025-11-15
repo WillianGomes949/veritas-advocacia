@@ -36,7 +36,7 @@ const buttonVariants = cva(
         
         // Botão success - Para confirmações
         success:
-          "bg-teal-600 text-white shadow-lg hover:bg-teal-700 focus-visible:ring-teal-500 border border-teal-500",
+          "bg-green-600 text-white shadow-lg hover:bg-green-700 focus-visible:ring-green-500 border border-green-500",
         
         // Botão danger - Para ações destrutivas
         danger:
@@ -72,6 +72,7 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
   href?: string
+  target?: string
   icon?: React.ReactNode
   iconPosition?: "left" | "right"
   loading?: boolean
@@ -88,6 +89,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     loadingText,
     asChild = false, 
     href,
+    target,
     icon,
     iconPosition = "left",
     children,
@@ -109,6 +111,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               className 
             })
           )}
+          target={target}
         >
           {loading ? (
             <>

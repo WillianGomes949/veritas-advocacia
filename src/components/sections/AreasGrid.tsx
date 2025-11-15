@@ -8,7 +8,7 @@ export function AreasGrid() {
     // Fundo 'Marfim Suave' (padrão)
     <section
       id="areas"
-      className="w-full scroll-mt-20 bg-background py-20 md:py-32"
+      className="w-full scroll-mt-20 bg-background py-20 md:py-30"
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Título da Seção - Alinhado ao centro */}

@@ -5,7 +5,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 
 export function SobreHome() {
   return (
-    <section className="w-full bg-background-accent py-20 md:py-32" id="sobre">
+    <section className="w-full bg-background-accent py-20 md:py-30" id="sobre">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">

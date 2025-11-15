@@ -25,9 +25,7 @@ export default function Home() {
         <CtaFinal />
         <Contact />
         <TopButton />
-
         <SimpleWhatsAppButton position="bottom-left"/>
-
         <Footer />
       </main>
     </div>

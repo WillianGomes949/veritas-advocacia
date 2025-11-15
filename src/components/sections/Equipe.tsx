@@ -7,7 +7,7 @@ import { BiCheck } from "react-icons/bi";
 export function Equipe() {
   return (
     // Fundo claro simples
-    <section className="w-full bg-white py-20 md:py-32">
+    <section className="w-full bg-white py-20 md:py-30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Título da Seção */}
         <SectionTitle

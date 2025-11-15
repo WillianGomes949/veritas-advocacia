@@ -1,7 +1,7 @@
 // src/components/ui/SectionTitle.tsx
 'use client'
 import { cn } from '@/lib/utils'; // Importa nossa função utilitária de classes
-import { FadeIn } from '../FadeIn';
+import { FadeIn } from './FadeIn';
 
 interface SectionTitleProps {
   subtitle: string;

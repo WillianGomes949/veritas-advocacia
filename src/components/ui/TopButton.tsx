@@ -47,9 +47,6 @@ export default function TopButton() {
           >
             <RiArrowUpLine className='h-7 w-7'/>
           </Button>
-          {/* Efeito de pulsaçao sutil */}
-      
-
           {/* 2. O Tooltip*/}
           <span
             className="absolute bottom-full mb-2 left-1/2 -translate-x-22

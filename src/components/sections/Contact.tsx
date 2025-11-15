@@ -13,7 +13,7 @@ import MyBadges from "../ui/MyBadges";
 export function Contact() {
   return (
     // Fundo com gradiente sutil
-    <section className="w-full bg-linear-to-br from-white to-gray-50 py-20 md:py-30" id="contato">
+    <section className="relative w-full py-20 md:py-30" id="contato">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Grid de 2 colunas em desktop */}
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">

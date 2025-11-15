@@ -1,6 +1,14 @@
 // src/components/layout/Footer.tsx
+import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
 
 // Links de navegação rápidos
 const navLinks = [
@@ -13,20 +21,20 @@ const navLinks = [
 
 // Links das redes sociais
 const socialLinks = [
-  { 
-    href: "https://wa.me/5585999999999", 
-    icon: FaWhatsapp, 
-    label: "WhatsApp" 
+  {
+    href: "https://wa.me/5585999999999",
+    icon: FaWhatsapp,
+    label: "WhatsApp",
   },
-  { 
-    href: "https://instagram.com/", 
-    icon: FaInstagram, 
-    label: "Instagram" 
+  {
+    href: "https://instagram.com/",
+    icon: FaInstagram,
+    label: "Instagram",
   },
-  { 
-    href: "https://linkedin.com/", 
-    icon: FaLinkedin, 
-    label: "LinkedIn" 
+  {
+    href: "https://linkedin.com/",
+    icon: FaLinkedin,
+    label: "LinkedIn",
   },
 ];
 
@@ -35,46 +43,53 @@ export function Footer() {
     // Fundo claro e escuro com bordas sutis
     <footer className="w-full bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          
           {/* 1. Logo e Descrição */}
           <div className="flex flex-col md:col-span-2">
-            {/* Logo substituta */}
-            <Link href="/" className="inline-block">
-              <div className="w-40 h-10 bg-linear-to-r from-amber-600 to-amber-700 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg tracking-tight">VÉRITAS</span>
+            {/* Logo - Substituído por Card */}
+            <Link href="/" className="flex items-center gap-2 group">
+              <Image
+                src="/logo.svg"
+                alt="Véritas Advocacia Logo"
+                width={50}
+                height={50}
+                priority
+                className="dark:invert transition-opacity group-hover:opacity-90"
+              />
+              <div className="text-zinc-800 dark:text-zinc-300 tracking-tight flex flex-col gap-0">
+                <h2 className="font-bold">Véritas</h2>
+                <span className="text-zinc-700 dark:text-zinc-400">
+                  Advogados
+                </span>
               </div>
             </Link>
-            {/*
-            <Image
-              src="/logo-branca.png"
-              alt="Véritas Advocacia Logo"
-              width={160}
-              height={40}
-            />
-            */}
+
             <p className="mt-4 text-base text-zinc-600 dark:text-zinc-300 max-w-md">
-              Defendemos seus direitos trabalhistas com excelência e transparência. 
-              Sua justiça começa aqui.
+              Defendemos seus direitos trabalhistas com excelência e
+              transparência. Sua justiça começa aqui.
             </p>
             {/* Informação OAB */}
             <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-500/10 rounded-lg border border-amber-200 dark:border-amber-500/20">
               <p className="text-sm text-zinc-800 dark:text-zinc-200">
-                <span className="font-semibold text-amber-600 dark:text-amber-400">Dr. Rodrigo Silva</span><br />
+                <span className="font-semibold text-amber-600 dark:text-amber-400">
+                  Dr. Rodrigo Silva
+                </span>
+                <br />
                 OAB/CE 123.456
               </p>
             </div>
           </div>
-          
+
           {/* 2. Links Rápidos */}
           <div>
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">Navegação</h3>
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">
+              Navegação
+            </h3>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-zinc-600 dark:text-zinc-300 transition-all duration-300 hover:text-amber-600 dark:hover:text-amber-400 hover:pl-2 block"
                   >
                     {link.label}
@@ -86,11 +101,17 @@ export function Footer() {
 
           {/* 3. Contato e Redes Sociais */}
           <div>
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">Contato</h3>
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">
+              Contato
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-zinc-600 dark:text-zinc-300">
                 <FaMapMarkerAlt className="h-4 w-4 text-amber-600 dark:text-amber-400 mt-1 shrink-0" />
-                <span className="text-sm">Av. Santos Dumont, 1234<br />Sala 501, Fortaleza-CE</span>
+                <span className="text-sm">
+                  Av. Santos Dumont, 1234
+                  <br />
+                  Sala 501, Fortaleza-CE
+                </span>
               </li>
               <li className="flex items-center gap-3 text-zinc-600 dark:text-zinc-300">
                 <FaPhone className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
@@ -101,7 +122,7 @@ export function Footer() {
                 <span className="text-sm">contato@veritasadv.com.br</span>
               </li>
             </ul>
-            
+
             {/* Ícones Sociais */}
             <div className="mt-6 flex space-x-3">
               {socialLinks.map((social) => (
@@ -118,19 +139,18 @@ export function Footer() {
               ))}
             </div>
           </div>
-
         </div>
 
         {/* Linha de Copyright */}
         <div className="mt-12 border-t border-zinc-200 dark:border-zinc-800 pt-8 text-center">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            © {new Date().getFullYear()} Véritas Advocacia. Todos os direitos reservados.
+            © {new Date().getFullYear()} Véritas Advocacia. Todos os direitos
+            reservados.
           </p>
           <p className="mt-2 text-xs text-zinc-400 dark:text-zinc-500">
             Desenvolvido com excelência para resultados extraordinários
           </p>
         </div>
-
       </div>
     </footer>
   );

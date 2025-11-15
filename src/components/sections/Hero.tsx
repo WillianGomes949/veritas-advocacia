@@ -7,7 +7,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 export function Hero() {
   return (
-    <section className="relative bg-linear-to-r py-20 md:py-30">
+    <section className="relative py-20 md:py-0">
       <div className="absolute inset-0 opacity-30 overflow-hidden -z-10">
         <Image
           src="/images/law.webp"
@@ -48,44 +48,16 @@ export function Hero() {
           </FadeIn>
           <FadeIn direction="left" delay={0.4}>
             {/* --- 2. Coluna de Imagem - Substituída por Card --- */}
-            <div className="flex justify-center">
-              {/* Card substituto para a imagem */}
-              <div className="w-full max-w-md h-80 bg-linear-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-700 rounded-2xl shadow-2xl flex items-center justify-center p-8 border border-zinc-300 dark:border-zinc-600">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <svg
-                      className="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 mb-2">
-                    Justiça & Excelência
-                  </h3>
-                  <p className="text-zinc-600 dark:text-zinc-300 text-sm">
-                    Defesa trabalhista especializada com resultados comprovados
-                  </p>
-                </div>
-              </div>
-
-              {/* 
+            <div className="relative">
             <Image
-              src="/images/banners/hero-banner.jpg"
+              src="/images/equipe/advogada.png"
               alt="Advocacia Trabalhista - Véritas Advocacia"
               width={600}
               height={600}
               priority
-              className="rounded-lg shadow-xl"
+              className="hidden md:flex w-full  rounded-lg inset-0 object-cover object-top"
             />
-            */}
+           
             </div>
           </FadeIn>
         </div>

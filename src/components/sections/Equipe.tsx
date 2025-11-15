@@ -3,6 +3,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { DADOS_EQUIPE } from "@/data/equipe";
 import MyBadges from "../ui/MyBadges";
 import { BiCheck } from "react-icons/bi";
+import Image from "next/image";
 
 export function Equipe() {
   return (
@@ -31,7 +32,7 @@ export function Equipe() {
               className="flex flex-col justify-between items-center text-center rounded-2xl bg-zinc-50 p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <div>
-                {/* Avatar substituto para imagem */}
+                {/* Avatar substituto para imagem
                 <div className="relative h-40 w-40 overflow-hidden rounded-full bg-linear-to-br from-amber-500 to-amber-600 shadow-lg flex items-center justify-center mx-auto">
                   <span className="text-4xl font-bold text-white">
                     {member.name
@@ -39,17 +40,16 @@ export function Equipe() {
                       .map((n) => n[0])
                       .join("")}
                   </span>
-                </div>
-                {/*
-                  <div className="relative h-60 w-60 overflow-hidden rounded-full shadow-lg">
-                    <Image
+                </div> */}
+
+                <div className="relative h-60 w-60 overflow-hidden rounded-full shadow-lg mx-auto">
+                  <Image
                     src={member.imageUrl}
                     alt={`Foto de ${member.name}`}
                     fill
                     className="object-cover object-top"
-                    />
-                  </div>
-                  */}
+                  />
+                </div>
 
                 {/* Informações */}
                 <div className="mt-6 w-full">
@@ -112,7 +112,7 @@ export function Equipe() {
           <MyBadges
             variant="success"
             icon={<BiCheck size={20} />}
-           description="Equipe multidisciplinar com mais de 50 anos de experiência combinada"
+            description="Equipe multidisciplinar com mais de 50 anos de experiência combinada"
           />
         </div>
       </div>

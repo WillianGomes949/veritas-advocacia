@@ -3,11 +3,25 @@ import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import MyBadges from "../ui/MyBadges";
 import { IoWarning } from "react-icons/io5";
+import Image from "next/image";
 
 export function CtaFinal() {
   return (
     // Fundo com gradiente sofisticado
-    <section className="w-full bg-linear-to-br from-zinc-50 to-amber-50 py-20 md:py-30">
+    <section className="relative w-full py-20 md:py-30">
+      <div className="absolute inset-0 opacity-30 overflow-hidden -z-10">
+              <Image
+                src="/images/law.webp"
+                alt="Background"
+                className="w-full h-full object-cover object-top"
+                width={600}
+                height={600}
+              />
+            </div>
+            <div className="absolute inset-0 bg-linear-to-r from-amber-950 to-amber-500 -z-11"></div>
+
+
+
       <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Container principal com borda sutil */}
         <div className="flex flex-col items-center text-center rounded-2xl bg-white p-8 shadow-lg md:p-12">

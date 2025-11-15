@@ -59,10 +59,8 @@ export function SobreHome() {
             {/* Botão para a página 'Sobre' completa */}
             <div className="mt-4 flex justify-center lg:justify-start">
               <Button
-                asChild
                 variant="secondary"
                 size="lg"
-                className="bg-zinc-800 hover:bg-zinc-900 dark:bg-zinc-700 dark:hover:bg-zinc-600 text-white font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Link href="/sobre">Conheça Nossa História</Link>
               </Button>

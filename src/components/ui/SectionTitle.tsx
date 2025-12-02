@@ -20,7 +20,7 @@ export function SectionTitle({
   const alignClass = align === 'center' ? 'text-center' : 'text-left';
 
   return (
-    <FadeIn direction='up' delay={0.1}>
+    <FadeIn direction='up' delay={0.2}>
     <div className={cn(alignClass, className)}>
       {/* Subtítulo: Dourado Acetinado (primary) */}
       <h6 className="mb-2 block text-sm font-semibold uppercase tracking-wide text-primary text-amber-600">

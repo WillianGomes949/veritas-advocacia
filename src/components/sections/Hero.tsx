@@ -50,7 +50,7 @@ export function Hero() {
             {/* --- 2. Coluna de Imagem - Substituída por Card --- */}
             <div className="relative">
             <Image
-              src="/images/equipe/advogada.png"
+              src="/images/equipe/advogada2.webp"
               alt="Advocacia Trabalhista - Véritas Advocacia"
               width={600}
               height={600}
